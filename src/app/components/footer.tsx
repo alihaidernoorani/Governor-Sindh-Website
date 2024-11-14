@@ -1,43 +1,64 @@
-import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className="bg-[#f4f4f5] flex flex-1 justify-between gap-32 leading-9 w-screen h-auto px-32 py-20">
-            <div>
-                <h1 className="font-bold">Core Courses</h1>
-                <ul>
-                    <li>Programming Fundamentals</li>
-                    <li>Web2 Using NextJS</li>
-                    <li>Earn as You Learn</li>
-                </ul>
-            </div>
+        <div className="bg-[#f4f4f5]">
+        <div className="flex flex-col md:flex-row justify-between gap-6 leading-9 max-w-screen h-auto mx-2 md:mx-32 py-20">
+        <div>
+          <h1 className="font-bold">Core Courses</h1>
+          <ul>
+            <li>
+              <Link href="#">Programming Fundamentals</Link>
+            </li>
+            <li>
+              <Link href="#">Web2 Using NextJS</Link>
+            </li>
+            <li>
+              <Link href="#">Earn as You Learn</Link>
+            </li>
+          </ul>
+        </div>
             <div>
                 <h1 className="font-bold">Advanced Courses</h1>
                 <ul>
-                    <li>Web 3 and Metaverse</li>
-                    <li>Cloud-Native Computing</li>
-                    <li>Artificial Intelligence (AI) and Deep Learning</li>
-                    <li>Ambient Computing and IoT</li>
-                    <li>Genomics and Bioinformatics</li>
-                    <li>Network Programmability and Automation</li>
+                    <li>
+                        <Link href="#">Web 3 and Metaverse</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Cloud-Native Computing</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Artificial Intelligence (AI) and Deep Learning</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Ambient Computing and IoT</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Genomics and Bioinformatics</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Network Programmability and Automation</Link>
+                    </li>
                 </ul>
             </div>
             <div>
             <h2 className="font-bold">Social Links</h2>
             <div className="flex flex-1 gap-3" >
-                <a href="https://facebook.com" target="_blank">< FaFacebook className="text-blue-500"/></a>
-                <a href="https://youtube.com" target="_blank"><FaYoutube className="text-red-600"/></a>
-                <a href="https://twitter.com" target="_blank"><FaTwitter className="text-blue-500"/></a>
-                <a href="https://instagram.com" target="_blank"><FaInstagram/></a>
-                <a href="https://tiktok.com" target="_blank"><FaTiktok/></a>
+                <Link href="https://facebook.com" target="_blank">< FaFacebook className="text-blue-500"/></Link>
+                <Link href="https://youtube.com" target="_blank"><FaYoutube className="text-red-600"/></Link>
+                <Link href="https://twitter.com" target="_blank"><FaTwitter className="text-blue-500"/></Link>
+                <Link href="https://instagram.com" target="_blank"><FaInstagram/></Link>
+                <Link href="https://tiktok.com" target="_blank"><FaTiktok/></Link>
             </div>
            <div>
-                <a className="" href="mailto:education@governorsindh.com">
+                <Link href="mailto:education@governorsindh.com">
                     education@governorsindh.com
-                </a>
+                </Link>
             </div> 
 
             </div>
+        </div>
         </div>
     );
 }

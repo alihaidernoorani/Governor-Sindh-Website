@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative overflow-hidden">
         {/* Background Image with Grey Overlay */}
-        <div className="absolute inset-0 z-0 w-full h-full bg-[url('/images/bg_house.jpg')] bg-cover bg-opacity-75">
+        <div className="absolute inset-0 z-0 w-full h-full bg-[url('/images/bg_house.jpg')] bg-cover bg-opacity-75 mt-16">
           <div className="absolute inset-0 w-full h-full bg-zinc-100 bg-opacity-80"></div>
         </div>
       
         {/* Content */}
-        <div className="relative z-10 m-auto flex flex-col items-center lg:items-start lg:flex-row mx-32 pt-8 lg:pt-48">
+        <div className="relative z-10 m-auto flex flex-col items-center lg:items-start lg:flex-row mt-16  sm:mx-32 pt-8 lg:pt-40">
           <div className="h-fit w-full text-center lg:text-left md:w-1/2">
             <h1 className="whitespace-nowrap text-[#044e83] text-[2rem] font-extrabold leading-10 tracking-wider text-main sm:text-5xl lg:text-6xl">
               Governor Sindh
@@ -33,7 +33,7 @@ export default function HeroSection() {
               <button className="bg-[#044e83] text-white px-6 md:px-9 py-2 rounded mb-4 md:mb-0 md:mr-4">
                 Apply Now
               </button>
-              <div className="text-center md:text-left">
+              <div className="text-center">
                 <p className="text-blue-800 font-bold text-2xl md:text-3xl">562,143</p>
                 <p className="text-blue-800">Accepted Applications</p>
               </div>
@@ -41,13 +41,13 @@ export default function HeroSection() {
           </div>
           
           {/* Governor Photo */}
-          <div className="relative  mt-7 flex  w-full items-end justify-center md:m-auto md:justify-end">
+          <div className="relative flex  w-full items-end justify-center md:justify-end">
             <Image
               src="/images/governor.png"
               alt="Photo of Governor Sindh, Kamran Khan Tessori"
               width={1000}
               height={1000}
-              className="object-cover  md:ml-40 h-auto min-w-[900px] lg:w-[600px]"
+              className="object-cover md:ml-36 h-auto min-w-[900px] lg:w-[600px]"
             />
           </div>
         </div>

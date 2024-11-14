@@ -9,9 +9,9 @@ export default function CoursesSection() {
   <div className="flex flex-col mx-2 md:mx-32 py-5 justify-center">
     <h1 className="text-[#044e83] text-3xl font-extrabold">Core Courses Sequence</h1>
     <div className="flex flex-wrap md:flex-nowrap flex-1 gap-6 md:gap-9 py-6">
-      <CourseCard src="/images/child_studying.jpg" alt="Programming Fundamentals" />
-      <CourseCard src="/images/nextjs.jpg" alt="Web2 Using NextJS" />
-      <CourseCard src="/images/person_studying.jpg" alt="Earn as You Learn" />
+      <CourseCard src="/images/child_studying.png" alt="Programming Fundamentals" />
+      <CourseCard src="/images/nextjs.png" alt="Web2 Using NextJS" />
+      <CourseCard src="/images/person_studying.png" alt="Earn as You Learn" />
     </div>
   </div>
 
@@ -27,7 +27,7 @@ export default function CoursesSection() {
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-1 gap-6 md:gap-9 py-6 md:w-1/2">   
           <CourseCard src="/images/genomics.png" alt="Genomics and Bioinformatics" />
-          <CourseCard src="/images/network_programmability.pg" alt="Network Programmability and Automation" />
+          <CourseCard src="/images/network_programmability.png" alt="Network Programmability and Automation" />
       </div>
       </div>
     </div>

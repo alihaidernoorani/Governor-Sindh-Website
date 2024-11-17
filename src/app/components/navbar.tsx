@@ -25,9 +25,9 @@ export default function Navbar() {
   return (
     // Div to color bar full width
     <div className="fixed top-0 w-screen z-30 bg-[#044e83]">
-      <div className="text-white flex h-16 items-center justify-around md:h-20 mx-20">
+      <div className="text-white flex h-16 items-center justify-around md:h-20 mx-2 md:mx-20">
         {/* Logo Section */}
-        <div className="mt-14 w-[70px] sm:mt-20 sm:w-[80px] md:w-[90px]">
+        <div className="mt-14 w-[70px] sm:mt-20 sm:w-[80px]">
           <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
         </div>
         
@@ -50,7 +50,7 @@ export default function Navbar() {
           </ul>
         </nav>
         {/* Mobile Menu Toggle Button */}
-        <div className="md:hidden sm:block mt-0">
+        <div className="md:hidden sm:block items-center">
           <button onClick={clickHandler}>
             <FaBars color="white" />
           </button>
